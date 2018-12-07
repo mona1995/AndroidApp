@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main2Activity">
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/txtViewCoffeeReq"
+        android:layout_marginTop="42dp">
+
+        <RadioButton
+            android:id="@+id/radioExpresso"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="184dp"
+            android:onClick="selectCoffee"
+            android:text="Expresso" />
+
+        <RadioButton
+            android:id="@+id/radioColombian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="selectCoffee"
+            android:text="Colombian" />
+
+        <RadioButton
+            android:id="@+id/radioDecaf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="selectCoffee"
+            android:text="Decaf" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/txtViewCoffeeReq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="149dp"
+        android:layout_marginStart="13dp"
+        android:text="What kind of coffee ?" />
+
+    <TextView
+        android:id="@+id/textViewAddToCoffee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="62dp"
+        android:text="What else do you like in your coffee ?" />
+
+    <CheckBox
+        android:id="@+id/creamChkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/sugarChkBox"
+        android:layout_marginTop="-57dp"
+        android:text="Cream" />
+
+    <CheckBox
+        android:id="@+id/sugarChkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="57dp"
+        android:text="Sugar" />
+
+    <Button
+        android:id="@+id/btnOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_alignBottom="@+id/creamChkBox"
+        android:layout_toEndOf="@+id/txtViewCoffeeReq"
+        android:text="Make an order" />
+
+
+</RelativeLayout>

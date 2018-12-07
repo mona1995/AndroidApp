@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main3Activity">
+
+
+    <Button
+        android:id="@+id/butsub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="31dp"
+        android:layout_marginEnd="112dp"
+        android:text="submit"
+       />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView1"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="141dp">
+
+        <RadioButton
+            android:id="@+id/radiopoor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="selectSer"
+            android:text="poor" />
+
+        <RadioButton
+            android:id="@+id/radioAvg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:onClick="selectSer"
+            android:text="Avg" />
+
+        <RadioButton
+            android:id="@+id/radioExcellent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="selectSer"
+            android:text="Excellent" />
+
+        <RadioButton
+            android:id="@+id/radioGood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="selectSer"
+            android:text="Good" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="166dp"
+        android:text="How was our Service?" />
+
+</RelativeLayout>
